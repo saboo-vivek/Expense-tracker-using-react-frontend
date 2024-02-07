@@ -16,7 +16,7 @@ const ContactUs = () => {
             message: message
         }
         console.log('Form submitted:', formData);
-        let res = await axios.post('http://localhost:5000/contact', formData)
+        let res = await axios.post('process.env.REACT_APP_API_KEY/contact', formData)
         console.log(res)
         if (res.status == 200) {
             alert(res.data.message)

@@ -18,9 +18,9 @@ export default function Allexpense() {
     const [totalamount, setTotalamount] = useState('');
     const fetchData = async () => {
         const token = localStorage.getItem("token");
-        let ar = await axios.get("http://localhost:5000/expense/show", { headers: { Authorization: token } })
+        let ar = await axios.get("process.env.REACT_APP_API_KEY/expense/show", { headers: { Authorization: token } })
         setExpenses(ar.data.result)
-        let res=await axios.get('http://localhost:5000/total',{ headers: { Authorization: token } })  
+        let res=await axios.get('process.env.REACT_APP_API_KEY/total',{ headers: { Authorization: token } })  
        setTotalamount(res.data.result)
     }
     const handleLogout = () => {
@@ -41,7 +41,7 @@ export default function Allexpense() {
             desc: description,
             category: category
         }
-        let res = await axios.put(`http://localhost:5000/expense/update/${idvalue}`, x, { headers: { Authorization: token } })
+        let res = await axios.put(`process.env.REACT_APP_API_KEY/expense/update/${idvalue}`, x, { headers: { Authorization: token } })
         console.log(res.data.result)
         fetchData();
     }
@@ -50,7 +50,7 @@ export default function Allexpense() {
     try {
         let id = e.currentTarget.parentNode.id;
         const token = localStorage.getItem("token");
-        let res = await axios.delete(`http://localhost:5000/expense/delete/${id}`, { headers: { Authorization: token } });
+        let res = await axios.delete(`process.env.REACT_APP_API_KEY/expense/delete/${id}`, { headers: { Authorization: token } });
         console.log(res.data.result);
         fetchData();
     } catch (error) {

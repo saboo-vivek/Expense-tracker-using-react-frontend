@@ -23,7 +23,7 @@ function ResetP() {
                 password: pass,
             };
 
-            let res = await axios.post(`http://localhost:5000/password/updatepassword/${id}`, obj);
+            let res = await axios.post(`process.env.REACT_APP_API_KEY/password/updatepassword/${id}`, obj);
             alert(res.data.message);
             aftercall();
         } catch (error) {

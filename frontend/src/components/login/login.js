@@ -15,7 +15,7 @@ export default function Login() {
             email:email,
             password:password
         }
-        let res=await axios.post('http://localhost:5000/login',obj)
+        let res=await axios.post('process.env.REACT_APP_API_KEY/login',obj)
         
            localStorage.setItem('token',res.data.token)
            localStorage.setItem('name',res.data.name)

@@ -10,7 +10,7 @@ function Forget() {
             email:email
         }
         
-            let res = await axios.post('http://localhost:5000/password/fp', obj);
+            let res = await axios.post('process.env.REACT_APP_API_KEY/password/fp', obj);
             alert(res.data.message);
         } catch (error) {
             console.error('Axios Error:', error);

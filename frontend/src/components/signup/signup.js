@@ -19,8 +19,8 @@ export default function Signup() {
         let obj1={
             email:email
         }
-        let res=await axios.post('http://localhost:5000',obj)
-        let resp=await axios.post('http://localhost:5000/check',obj1)
+        let res=await axios.post('process.env.REACT_APP_API_KEY',obj)
+        let resp=await axios.post('process.env.REACT_APP_API_KEY/check',obj1)
             alert(res.data.message);
             setName('');
             setEmail('');

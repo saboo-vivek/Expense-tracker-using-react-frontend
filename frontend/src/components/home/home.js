@@ -32,7 +32,7 @@ const Home = () => {
 
             const token = localStorage.getItem("token");
 
-            let res = await axios.post("http://localhost:5000/expense", obj, { headers: { Authorization: token } });
+            let res = await axios.post("process.env.REACT_APP_API_KEY/expense", obj, { headers: { Authorization: token } });
             if (res.status === 201) {
                 setAlert(true);
                 setTimeout(() => {
