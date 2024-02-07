@@ -1,0 +1,29 @@
+.listclass{
+    position: relative;
+    left:20%;
+}
+.ebtn{
+   cursor: pointer;
+   position: absolute;
+   right: 50%;
+}
+.dbtn{
+    cursor: pointer;
+    position: absolute;
+    right: 40%;
+ }
+ .expmain {
+    background-image: url('exp9.jpg');
+    background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.popform{
+    position: relative;
+    left:25%
+}
+.totalexpense{
+    position: relative;
+    left: 40%;
+}
