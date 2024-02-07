@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd44fd40.css",
+    "main.js": "/static/js/main.c5cf7eb2.js",
+    "static/js/592.bf6ca574.chunk.js": "/static/js/592.bf6ca574.chunk.js",
+    "static/media/black-friday-concept-with-cart-basket.jpg": "/static/media/black-friday-concept-with-cart-basket.02e6c6c6846fd845aec0.jpg",
+    "static/media/exp9.jpg": "/static/media/exp9.1adfb24e23c6b9a05f52.jpg",
+    "static/media/exp2.jpg": "/static/media/exp2.9f35c910b18aa815a00e.jpg",
+    "static/media/exp44.jpg": "/static/media/exp44.2e2e6e238a29f87f4753.jpg",
+    "static/media/shopping-bag-cart.jpg": "/static/media/shopping-bag-cart.b36b3ac735cf7eb299b5.jpg",
+    "index.html": "/index.html",
+    "main.dd44fd40.css.map": "/static/css/main.dd44fd40.css.map",
+    "main.c5cf7eb2.js.map": "/static/js/main.c5cf7eb2.js.map",
+    "592.bf6ca574.chunk.js.map": "/static/js/592.bf6ca574.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd44fd40.css",
+    "static/js/main.c5cf7eb2.js"
+  ]
+}
